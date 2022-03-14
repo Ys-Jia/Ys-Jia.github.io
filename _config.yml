@@ -23,7 +23,7 @@ email: yj2677@columbia.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome! This is Yinsen Jia's personal website. Feel free to contact me by these social links!
 
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://Ys-Jia.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 linkedin_username: "Yinsen-Jia"
 github_username:  "Ys-Jia"

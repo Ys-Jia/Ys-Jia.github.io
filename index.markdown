@@ -31,10 +31,10 @@ I am a first-year M.S student in [Department of Electrical Engineering](https://
 
 I have received Bachelor's degree of Electrical and Automation Engineering from [Nanjing Normal University](https://www.njnu.edu.cn/)(2020), and was a short-term student at [Rice University](https://www.rice.edu/)(2021). Now I am studying in Columbia University and expecting to graduate in 2023.
 
-I have been the research assistant in Robot Learning and Control Group of Nanjing University, posting and oral presenting my work on [IEEE ICNSC conference](http://www.icnsc2020.org/). I was also the research leader of UAV denoising communication link group in Jiangsu Electromagnetic Compatibility Engineering. I am now the member of [CAIR]((https://cair.cs.columbia.edu/)) Lab guided by Professor [Shuran Song](https://www.cs.columbia.edu/~shurans/) and Ph.D. [Jingxi Xu](https://jxu.ai/).
+I have been the research assistant in Robot Learning and Control Group of Nanjing University, posting and oral presenting my work on [IEEE ICNSC conference](http://www.icnsc2020.org/). I was also the research leader of UAV denoising communication link group in Jiangsu Electromagnetic Compatibility Engineering. I am now the member of [CAIR](https://cair.cs.columbia.edu/) Lab guided by Professor [Shuran Song](https://www.cs.columbia.edu/~shurans/) and Ph.D. [Jingxi Xu](https://jxu.ai/).
 
 ---
 <br>
 
-## HighLights
+<!--## HighLights-->
 

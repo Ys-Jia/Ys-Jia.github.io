@@ -207,7 +207,7 @@ body {
   }
   
   .profile-img-col {
-    width: 50%;
+    width: 55%;
   }
   
   .profile-img {
@@ -586,6 +586,7 @@ body {
   
     .video-col {
       width: 90%;
+      padding-bottom: 1em;
     }
 
     .publications ul{
@@ -610,7 +611,6 @@ body {
 
     .caption_below{
       padding-top: 0.5em;
-      padding-bottom: 0.7em;
     }
 
     .caption_below_lifestyle{

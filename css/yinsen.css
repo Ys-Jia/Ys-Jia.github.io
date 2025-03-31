@@ -207,7 +207,7 @@ body {
   }
   
   .profile-img-col {
-    width: 40%;
+    width: 50%;
   }
   
   .profile-img {
@@ -215,7 +215,7 @@ body {
     /* this is needed for auto margin to work */
     display: block;
     margin: 1em auto;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
   }
   
@@ -393,6 +393,17 @@ body {
     border-radius: 0.25rem;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
   }
+
+  .publication-video {
+    width: 100%; /* Scale down the video proportionally to fit the column width */
+    border: none;
+    /* this is needed for auto margin to work */
+    display: block;
+    margin-right: 3em auto;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    aspect-ratio: 1.6 / 1; /* Important scaling */
+  }
   
   .publication-award {
     color: red;
@@ -525,6 +536,12 @@ body {
   
   .caption {
     text-align: center;
+    padding-bottom: 0.5em;
+  }
+
+  .caption_above{
+    text-align: center;
+    padding-top: 0.5em;
     padding-bottom: 0.5em;
   }
 

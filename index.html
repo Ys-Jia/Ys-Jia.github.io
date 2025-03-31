@@ -56,7 +56,7 @@
             <div class="column is-2" id="sidebar_">
               <div class="sticky">
                 <figure>
-                  <img src="images/Resume-Photo.png">
+                  <img src="images/Profile/Resume-Photo.png">
                 </figure>
                 <div class="content">
                   <h3>Yinsen Jia</h3>
@@ -130,7 +130,7 @@
                     </div>
                     
                     <div class="profile-img-col">
-                        <img src="images/image_with_background.png" class="profile-img" alt="" />
+                        <img src="images/Profile/Profile_photo_033025.jpg" class="profile-img" alt="" />
                     </div>
                 </div>
                 
@@ -139,8 +139,8 @@
                     <p>
                       I am a Ph.D. student in <a href="https://ece.duke.edu/" target="_blank">Electrical and Computer Engineering</a> 
                       at <a href="https://duke.edu/" target="_blank">Duke University</a> advised by <a href="http://boyuanchen.com/" target="_blank">Professor Boyuan Chen</a>. 
-                      I am interested in Robot Data-Driven Control in Dynamic Environments, Robotic Representation Learning, Multi-modality Learning, and Computer Vision. 
-                      <b><i>My research aims to help robots independently explore and understand the world, so that in the future they will become not only smarter assistants but also trustworthy friends</i></b> 🤖.
+                      I am interested in Data-driven Control, Self-guided Skill Retrieval for Manipulation, Multi-modality Sensor Fusion, and Reinforcement Learning. 
+                      <b><i>My research aims to help robots independently interact with, understand, and exert control over the world. In the future, they will become not only smarter assistants but also trustworthy friends</i></b> 🤖.
                     </p>
 
                     <p>
@@ -150,7 +150,7 @@
                     </p>
 
                     <p>
-                      I was a research assistant in Robot Learning and Control Group of Nanjing University for <a href="https://scholar.google.com/citations?user=5kXEo74AAAAJ&hl=en" target="_blank">Professor Chunlin Chen</a>
+                      Before join Duke, I was a research assistant in Robot Learning and Control Group of Nanjing University for <a href="https://scholar.google.com/citations?user=5kXEo74AAAAJ&hl=en" target="_blank">Professor Chunlin Chen</a>
                       and the leader of UAV Communication Link Denoising Group in Jiangsu Electromagnetic Compatibility Engineering with <a href="http://schools.njnu.edu.cn/electric/person/wei-yan" target="_blank">Professor Wei Yan</a>. 
                       During my Master' study, I was working with <a href="https://www.cs.columbia.edu/~shurans/" target="_blank">Professor Shuran Song</a> in <a href="https://cair.cs.columbia.edu/" target="_blank">Columbia Artificial Intelligence and Robotics Lab</a>, 
                       and interned as a deep learning researcher at <a href="https://kodiak.ai/" target="_blank">Kodiak Robotics</a>.
@@ -230,6 +230,9 @@
                     <h1>News</h1>
                     <ul>
                       <li>
+                        [2024-09] Our paper "<a href="#ClutterGen">ClutterGen: A Cluttered Scene Generator for Robot Learning</a>" got accepted to <a hred="https://2024.corl.org/">CoRL 2024</a>!
+                      </li>
+                      <li>
                         [2024-06] The paper "<a href="#meta_controller">Dynamic Grasing with a Learned Meta-Controller</a>" got accepted to <a href="https://2024.ieeecase.org/">IEEE CASE 2024</a>!
                       </li>
                       <li>
@@ -265,19 +268,19 @@
                         [2020-01] The paper "<a href="#UAV_denoise">An UAV Wireless Communication Noise Suppression Method...</a>"
                         got accepted to Radio Science.
                       </li>
-                      <li>
-                        [2019-12] I joined Robot Learning and Control Group of Nanjing University as a research assistant.
-                      </li>
-                      <li>
-                        [2019-07] The paper "<a href="#electromagnetic_pulse">Study on the Influence of Electromagnetic Pulse...</a>" 
-                        got accepted to American Journal of Electrical and Electronic Engineering.
-                      </li>
                     </ul>
 
                     <div class="collapse_container">
                       <input type="checkbox" id="check_id">
                       <label for="check_id"></label>
                       <ul>
+                        <li>
+                          [2019-12] I joined Robot Learning and Control Group of Nanjing University as a research assistant.
+                        </li>
+                        <li>
+                          [2019-07] The paper "<a href="#electromagnetic_pulse">Study on the Influence of Electromagnetic Pulse...</a>" 
+                          got accepted to American Journal of Electrical and Electronic Engineering.
+                        </li>
                         <li>
                           [2019-06] The paper "<a href="#EMI_extractopm">Investigation on conducted EMI noise source...</a>" 
                           got accepted to IET Power Electronics.
@@ -325,6 +328,7 @@
                           </div>
                           <div class="publication-conference">
                             Conference on Robot Learning (CoRL) 2024<br>
+                            Workshop on Mastering Robot Manipulation at CoRL 2024<br>
                           </div>
                           <div class="publication-link">
                             [<a download href="https://arxiv.org/abs/2407.05425" target="_blank">Paper</a>] 
@@ -503,6 +507,7 @@
                           </div>
                           <div class="publication-link">
                             [<a href="http://pubs.sciepub.com/ajeee/7/2/4/" target="_blank">Paper</a>]
+                            [<a href="https://github.com/Ys-Jia/UAV-noise-suppression" target="_blank">Github</a>]
                           </div>
                         </div>
                       </li>
@@ -514,23 +519,28 @@
                     <div class="research-columns">
 
                       <div class="video-col">
-                        <img class="publication-img" src="images/RRT-Circle.gif" alt="" />
-                        <div class="caption_below">Adaptive grasp in dynamic environments.</div>
+                        <div class="caption_above">"Balanced Gentleman" bipedal robot.</div>
+                        <video class="publication-video" autoplay loop muted playsinline src="Projects/RobotStudio/walking_robot.MP4" alt="" />
                       </div>
 
                       <div class="video-col">
+                        <div class="caption_above">Hyperbolic model for object detection.</div>
                         <img class="publication-img" src="images/Hyperbolic_object_detection.gif" alt="" />
-                        <div class="caption_below">Hyperbolic model for object detection.</div>
                       </div>
 
-                      <div class="video-col">                        
+                      <div class="video-col">
+                        <div class="caption_above">Citi-Bin: An intelligent garbage bin.</div>                    
                         <img class="publication-img" src="images/CourseProject/Citi_Bin/citi_bin.gif" alt="" />
-                        <div class="caption_below">Citi-Bin: An intelligent garbage bin.</div>
                       </div>
                     </div>
 
                     <div>
                       <ul>
+                        <li>
+                          <i>"Balanced Gentleman": A bipedal robot with a balanced arm</i>
+                          (Robot Studio Course Project) - advised by
+                          <a href="http://boyuanchen.com/" target="_blank">Professor Boyuan Chen</a>.
+                        </li>
                         <li>
                           <a href="https://github.com/Ys-Jia/Adaptive-Grasp-in-Dynamic-Environment" target="_blank"><i>Adaptive grasp in dynamic environments</i></a> 
                           (COMS6998-5 Robotic Learning Course Project) - advised by
@@ -565,6 +575,9 @@
                     <h1>Talks</h1>
                     <ul>
                       <li>
+                        Poster presentation at <a href="https://2024.corl.org/" target="_blank">Conference of Robot Learning (CoRL) 2024</a> - November 7 · Munich, Germany
+                      </li>
+                      <li>
                         Poster presentation at <a href="https://umasslowell2022.nerc.io/" target="_blank">Northeast Robotics Colloquium (NERC) 2022</a> - October 8 · UMass Lowell
                       </li>
                     </ul>
@@ -572,7 +585,6 @@
             
                   <div class="misc" id="lifestyle">
                     <h1>Lifestyle</h1>
-                    <h6>I always enjoy my everyday life!</h6>
                     <div class="lifestyle-columns">
 
                       <div class="lifestyle-col">
@@ -582,9 +594,9 @@
                       </div>
 
                       <div class="lifestyle-col">
-                        <img class="lifestyle-img" src="images/lifestyle/basketball_columbia.jpg" alt="" />
-                        <div class="caption_below">Last play in Levien Gym :(.</div>
-                        <div class="caption_below_lifestyle">2022.12, Columbia.</div>
+                        <img class="lifestyle-img" src="images/lifestyle/CoRL2024.JPG" alt="" />
+                        <div class="caption_below"> CoRL 2024.</div>
+                        <div class="caption_below_lifestyle">2024.11, Munich.</div>
                       </div>
 
                       <div class="lifestyle-col">

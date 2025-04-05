@@ -207,7 +207,7 @@ body {
   }
   
   .profile-img-col {
-    width: 55%;
+    width: 50%;
   }
   
   .profile-img {
@@ -351,6 +351,10 @@ body {
 
   
   /* Publications */
+  .publications {
+    margin-top: 2em;
+  }
+
   .publications ul {
     padding-left: 0.0em;
     list-style: none;

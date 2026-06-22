@@ -369,7 +369,7 @@ body {
   }
 
   .publication-img-col {
-    flex: 0 0 40%;
+    flex: 0 0 34%;
   }
 
   .publication-info-col {
@@ -599,7 +599,7 @@ body {
     }
 
     .video-col {
-      width: 90%;
+      width: 100%;
       padding-bottom: 1em;
     }
 

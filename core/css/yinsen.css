@@ -1,0 +1,670 @@
+/* font
+font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif
+*/
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  @media (min-width: 1500px) {
+    html {
+      zoom: 110%;
+    }
+  }
+
+  /* ===========================
+  Typography
+  =========================== */
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .name_title {
+    font-size: 11pt;
+  }
+
+  .email {
+    color: #022169;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: #022169;
+  }
+
+  h1{
+    padding-top: 25px;
+  }
+
+  .site-title h1 {
+    /* color: #143774; */
+    margin: 0;
+  }
+
+  .subtitle {
+    font-weight: 700;
+    color: #1792d2;
+    font-size: 0.75rem;
+    margin: 0;
+  }
+
+  .slogan{
+    font-weight: 700;
+    color: #d21717;
+    font-size: 0.75rem;
+    margin: 0;
+    text-align: initial;
+  }
+
+  .strengthen{
+    color: #d21717;
+  }
+
+  a {
+    text-decoration: none;
+    color: #0033a0;
+    padding: 0.25em 0;
+  }
+
+  a:hover,
+  a:focus {
+    color: #6cace4;
+  }
+
+  @media (max-width: 530px) {
+    .mobhide {
+      display: none;
+    }
+  }
+
+  /* ===========================
+  Layout
+  =========================== */
+
+  /* SideBar */
+  .content h3 {
+    text-align: center;
+  }
+
+  .details h3 {
+    font-weight: 600;
+    font-size: 1em;
+    color: #000;
+  }
+
+  .sticky {
+      position: sticky;
+      top: 30px;
+      text-align: center;
+  }
+
+  .sticky img {
+    display: block;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+  }
+
+  .social {
+      /*float: left;*/
+      padding-bottom: 2em;
+      padding-top: 1em;
+      font-size: 1em;
+      display: inline-block;
+      overflow: visible;
+  }
+
+  .sidebar {
+      /*float: left;*/
+      padding-bottom: 2em;
+      padding-top: 1em;
+      font-size: 1em;
+  }
+
+
+  /******* Right side main content *******/
+
+  /* Header and Footer and Image */
+  img {
+    width: 100%;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
+  .container-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header {
+    background: #f8f8f8;
+    padding: 0.5em 0;
+  }
+
+  footer {
+    background: #f8f8f8;
+    color: #707070;
+    text-align: center;
+    padding: 0.25em 0;
+  }
+
+  .footer-content {
+    font-size: 0.75rem;
+    margin: 0;
+  }
+
+  /* navigation (not used)*/
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+  }
+
+  nav li {
+    margin-left: 2em;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: 0.25em 0;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    color: #6cace4;
+  }
+
+  /* current page does not make sense right now because only have one page */
+  /* .current-page {
+    border-bottom: 1px solid #707070;
+  }
+
+  .current-page:hover {
+    color: #707070;
+  } */
+
+  /* Name card */
+
+  .namecard {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5em;
+  }
+
+  .profile-img-col {
+    width: 50%;
+  }
+
+  .profile-img {
+    width: 80%;
+    /* this is needed for auto margin to work */
+    display: block;
+    margin: 1em auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+
+  .affiliations-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+  }
+
+  .affiliations-col p {
+    margin: 0 0 1em 0;
+  }
+
+  .affiliations-col h1 {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 875px) {
+    .namecard {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-img-col {
+      width: 90%;
+      max-width: 500px;
+    }
+
+    .affiliations-col {
+      width: 100%;
+    }
+
+  }
+
+  /* News */
+  .news ul,
+  .misc ul,
+  .teaching ul,
+  .projects ul,
+  .talks ul,
+  .talks ul > ul{
+    padding-left: 1em;
+    line-height: 1.1;
+  }
+
+  /* Text alighnment and height adjustment: https://www.webucator.com/article/how-to-set-text-spacing-and-placement-in-css/ */
+  /* .news ul li:not(:last-child),
+  .misc ul li:not(:last-child),
+  .teaching ul li:not(:last-child),
+  .projects ul li:not(:last-child),
+  .talks ul li:not(:last-child){
+    line-height: 0.5;
+  } */
+  .namecard,
+  .about ,
+  .research,
+  .news,
+  .teaching,
+  .talks{
+    text-align: justify;
+  }
+
+  /* Show more or less Button for "news" */
+  .collapse_container{
+    position: relative;
+    height: auto;
+    list-style-type: none;
+  }
+
+  [type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+  }
+
+  [type="checkbox"] ~ ul {
+    display: none;
+  }
+
+  [type="checkbox"]:checked ~ ul {
+    display: block;
+  }
+
+  [type="checkbox"]:checked + label {
+    top: 100%;
+  }
+
+  [type="checkbox"]:checked + label:before {
+    content: 'Less';
+  }
+
+  [type="checkbox"]:checked + label:after {
+    content: '⇡●';
+  }
+
+  label {
+    background: #f19b06;
+    display: block;
+    border-radius: 0.5em;
+    width: 15%;
+    min-width: 4.5em;
+    height: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    top: -10px;
+    left: 2em;
+  }
+
+  label:before,
+  label:after {
+    position: absolute;
+  }
+
+  label:before {
+    content: 'More';
+    left: 10px;
+  }
+
+  label:after {
+    content: '⇣●';
+    right: 10px;
+    animation: sudo .85s linear infinite alternate;
+  }
+
+  @keyframes sudo {
+    from {
+      transform: translateY(-2px);
+    }
+    to {
+      transform: translateY(2px);
+    }
+  }
+
+
+  /* Publications */
+  .publications {
+    margin-top: 2em;
+  }
+
+  .publications ul {
+    padding-left: 0.0em;
+    list-style: none;
+  }
+
+  .publication-item {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    padding-bottom: 2.2em;
+  }
+
+  .publication-img-col {
+    flex: 0 0 40%;
+  }
+
+  .publication-info-col {
+    flex: 1;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .publication-title {
+    font-size: 1.2rem;
+  }
+
+  .publication-conference {
+    font-style: italic;
+  }
+
+  .publication-img {
+    width: 100%;
+    /* height: 130; */
+    border: none;
+    /* this is needed for auto margin to work */
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+
+  .publications .publication-img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  .publication-video {
+    width: 100%; /* Scale down the video proportionally to fit the column width */
+    border: none;
+    /* this is needed for auto margin to work */
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    aspect-ratio: 1.6 / 1; /* Important scaling */
+  }
+
+  .publication-award {
+    color: red;
+  }
+
+  .award-highlight {
+    color: red;
+  }
+
+  .year {
+    font-size: 1.5rem;
+  }
+
+  /* Research */
+  .research-columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .video-col {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* fix youtube embed black bar: https://stackoverflow.com/questions/43954836/disabling-blackbars-on-youtube-embed-iframe */
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+    /* Research */
+  .research-columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .video-col {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* fix youtube embed black bar: https://stackoverflow.com/questions/43954836/disabling-blackbars-on-youtube-embed-iframe */
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+    /* Research */
+  .research-columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .video-col {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* fix youtube embed black bar: https://stackoverflow.com/questions/43954836/disabling-blackbars-on-youtube-embed-iframe */
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Lifestyle */
+  .lifestyle-columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lifestyle-col {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* fix youtube embed black bar: https://stackoverflow.com/questions/43954836/disabling-blackbars-on-youtube-embed-iframe */
+  .lifestyle-container {
+    position: relative;
+    padding-bottom: 120%;
+    height: 0;
+  }
+
+  /* Image fix: https://www.w3schools.com/css/css3_object-fit.asp */
+  .lifestyle-img{
+    /* max-width:500px;
+    max-height: 300px; */
+    border: none;
+    /* this is needed for auto margin to work */
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    object-fit: cover;
+  }
+
+  .lifestyle-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .caption {
+    text-align: center;
+    padding-bottom: 0.5em;
+  }
+
+  .caption_above{
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
+  .caption_below{
+    text-align: center;
+    padding-top: 0.5em;
+  }
+
+  .caption_below_lifestyle{
+    text-align: center;
+    font-size: 13px;
+    font-style: italic;
+  }
+
+  .highlight {
+      background: #ffffdd;
+      /* font-family: monaco, monospace; */
+  }
+
+  /* Smaller scaling (e.g. half window or mobile device) adjustment; All changes are inheurited from original layerout*/
+  @media (max-width: 769px) {
+    #sidebar_{
+      background-color: aliceblue;
+      max-width: 100%;
+      border-radius: 1em;
+    }
+
+    .research-columns {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .news ul,
+    .misc ul,
+    .teaching ul,
+    .projects ul,
+    .talks ul,
+    .talks ul > ul{
+      padding-left: 0em;
+      margin-left: 1em;
+    }
+
+    .video-col {
+      width: 90%;
+      padding-bottom: 1em;
+    }
+
+    .publications ul{
+      padding-left: 0;
+      margin-left: 0;
+    }
+
+    .publication-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75em;
+    }
+
+    .publication-img-col{
+      flex: none;
+      width: 100%;
+      padding-right: 0;
+    }
+
+    .publication-title{
+      font-size: 1.0rem;
+    }
+    .publication-info-col{
+      width: 100%;
+      font-size: 0.8rem;
+    }
+
+    .caption {
+      padding-bottom: 0.5em;
+    }
+
+    .caption_below{
+      padding-top: 0.5em;
+    }
+
+    .caption_below_lifestyle{
+      padding-top: -0.7em;
+      padding-bottom: 1em;
+    }
+
+    .lifestyle-columns {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .lifestyle-col{
+      width: 70%;
+    }
+
+    .sticky img {
+      max-width: 30%;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    .collapse_container label{
+      left: 0;
+    }
+
+    .collapse_container label:before,
+    .collapse_container [type="checkbox"]:checked + label:before {
+      content: none;
+    }
+
+  }
